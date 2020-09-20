@@ -19,7 +19,7 @@ pub enum FrameError {
 }
 
 /// A 64-bit page table entry.
-#[derive(Clone)]
+#[derive(Clone, Copy)]
 #[repr(transparent)]
 pub struct PageTableEntry {
     entry: u64,
